@@ -10,6 +10,14 @@ from my_lib.my_funcs import *
 
 # COMMAND ----------
 
+
+
+# COMMAND ----------
+
+
+
+# COMMAND ----------
+
 # MAGIC %md
 # MAGIC Using `%run` allows you to execute a Databricks notebook in the current SparkSession, bringing any imported modules, declared variables, or defined functions into the current scope.
 # MAGIC 
@@ -24,6 +32,14 @@ from my_lib.my_funcs import *
 # COMMAND ----------
 
 # MAGIC %run ./my_lib/my_funcs
+
+# COMMAND ----------
+
+
+
+# COMMAND ----------
+
+
 
 # COMMAND ----------
 
@@ -47,8 +63,25 @@ display(df)
 
 # COMMAND ----------
 
+
+
+# COMMAND ----------
+
 display(df.select(roundedTemp("unit", "temp")))
 
 # COMMAND ----------
 
+
+
+# COMMAND ----------
+
 display(df.select(convertFtoC("unit", "temp")))
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC Simple markdown
+
+# COMMAND ----------
+
+df.count()
